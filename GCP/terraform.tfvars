@@ -1,0 +1,16 @@
+cluster_name="mycluster"
+region="us-central1"
+graceful_decommission_timeout=120
+no_of_instances=1
+compute_machine_name="xyz"
+cluster_version="2.0.35-debian10"
+master_instance_type="n1-standard-16"
+master_disk_type="pd-standard"
+master_disk_size=500
+primary_worker_min_instances=2
+worker_instance_type="n1-standard-16"
+min_cpu_platform="Intel Skylake"
+disk_size=500
+master_local_ssd=0
+# initialization_script ="gs://dataproc-initialization-actions/stackdriver/stackdriver.sh"
+initialization_timeout_sec=300
